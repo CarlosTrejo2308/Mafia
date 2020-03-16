@@ -1,7 +1,20 @@
 import getpass
 from player import Player
 
+def printMenu():
+    print("1. Instructions")
+    print("2. Settings")
+    print("3. Players")
+    print("4. Play")
+    print("5. Credits")
+
+
+
 def main():
+    from Calvin import Calvin
+    narrator = Calvin()
+    players = []
+    
     def addPlayer():
         nameT = input("Name: ")
         print("Password: ")
@@ -9,10 +22,9 @@ def main():
         temp = Player(nameT, p)
         players.append(temp)
 
-    from Calvin import Calvin
-    narrator = Calvin()
-    players = []
     addPlayer()
+
+    narrator.say("Hi, this is a test. " + players[0].name)
 
     for p in players:
         print(p.name, p.pwd, p.live)

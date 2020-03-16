@@ -16,9 +16,9 @@ class Calvin:
 
 
 
-
+# 
 # from gtts import gTTS
 # import os
-# tts = gTTS(text='Hola, mi nombre es Kara y sere tu narradora el dia de hoy', lang='es')
+# tts = gTTS(text='Algo', lang='es')
 # tts.save("good.mp3")
 # os.system("good.mp3")
